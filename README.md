@@ -59,6 +59,10 @@ public class CalculadoraTest {
 
 
 # Cómo Ejecutar el Proyecto
+# opcion 1 clonar el repositorio
+https://github.com/jeisson88/TI-pruebaunitaria.git
+lo puede clonar mediante este enlace
+# opcion 2
 # descargar el archivo Rar
 decomprimirlo
 #  Abrir en NetBeans

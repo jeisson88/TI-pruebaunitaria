@@ -77,3 +77,7 @@ Usar el atajo Ctrl + F6.
 
 Si todas las pruebas pasan correctamente, verás el siguiente mensaje en la consola:
 # Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+
+# Licencia
+Este proyecto se distribuye bajo la licencia MIT

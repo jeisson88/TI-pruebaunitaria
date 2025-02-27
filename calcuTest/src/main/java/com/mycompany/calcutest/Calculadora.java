@@ -19,4 +19,9 @@ public class Calculadora {
     public int sumar(int a, int b) {
         return a + b; // Retorna el resultado de la suma.
     }
+    
+    // metodo para resta
+        public int restar(int a, int b) {
+        return a - b;
+    }
 }

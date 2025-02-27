@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.calcutest.CalculadoraTest" time="0.054" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.calcutest.CalculadoraTest" time="0.089" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\123\AppData\Local\Temp\surefire9098025831724264856\surefirebooter-20250219232252929_3.jar C:\Users\123\AppData\Local\Temp\surefire9098025831724264856 2025-02-19T23-22-52_822-jvmRun1 surefire-20250219232252929_1tmp surefire_0-20250219232252929_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\123\AppData\Local\Temp\surefire11873111454587947611\surefirebooter-20250226232339969_3.jar C:\Users\123\AppData\Local\Temp\surefire11873111454587947611 2025-02-26T23-23-39_883-jvmRun1 surefire-20250226232339969_1tmp surefire_0-20250226232339969_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.mycompany.calcutest.CalculadoraTest"/>
     <property name="surefire.test.class.path" value="C:\Users\123\Documents\NetBeansProjects\calcuTest\target\test-classes;C:\Users\123\Documents\NetBeansProjects\calcuTest\target\classes;C:\Users\123\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\123\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\123\AppData\Local\Temp\surefire9098025831724264856\surefirebooter-20250219232252929_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\123\AppData\Local\Temp\surefire11873111454587947611\surefirebooter-20250226232339969_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.2+7-58"/>
@@ -60,7 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testSumar" classname="com.mycompany.calcutest.CalculadoraTest" time="0.006"/>
-  <testcase name="testSumarNegativos" classname="com.mycompany.calcutest.CalculadoraTest" time="0.0"/>
-  <testcase name="testSumarCero" classname="com.mycompany.calcutest.CalculadoraTest" time="0.0"/>
+  <testcase name="testSumar" classname="com.mycompany.calcutest.CalculadoraTest" time="0.008"/>
+  <testcase name="testMultiplicar" classname="com.mycompany.calcutest.CalculadoraTest" time="0.0"/>
+  <testcase name="testDividirPorCero" classname="com.mycompany.calcutest.CalculadoraTest" time="0.0"/>
+  <testcase name="testDividir" classname="com.mycompany.calcutest.CalculadoraTest" time="0.0"/>
+  <testcase name="testRestar" classname="com.mycompany.calcutest.CalculadoraTest" time="0.0"/>
 </testsuite>

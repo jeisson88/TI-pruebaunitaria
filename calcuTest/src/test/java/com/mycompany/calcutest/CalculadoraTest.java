@@ -6,6 +6,7 @@ package com.mycompany.calcutest;
 
 import org.junit.Test;  // Importa la anotación @Test para definir pruebas unitarias.
 import static org.junit.Assert.*; // Importa las funciones de aserción de JUnit para validar los resultados.
+import org.junit.Before;
 
 /**
  * Clase de pruebas unitarias para la clase Calculadora.
@@ -15,36 +16,59 @@ import static org.junit.Assert.*; // Importa las funciones de aserción de JUnit
  */
 public class CalculadoraTest {
 
+       private Calculadora calculadora;
+
     /**
-     * Prueba unitaria para verificar la suma de dos números positivos.
-     * Se espera que 2 + 3 sea igual a 5.
+     * Método que se ejecuta antes de cada prueba.
+     * Inicializa la instancia de la calculadora.
+     */
+    @Before
+    public void setUp() {
+        calculadora = new Calculadora();
+    }
+
+    /**
+     * Prueba unitaria del método sumar.
      */
     @Test
     public void testSumar() {
-        Calculadora calculadora = new Calculadora(); // Crea una instancia de la Calculadora.
-        int resultado = calculadora.sumar(2, 3); // Ejecuta el método sumar con los valores 2 y 3.
-        assertEquals(5, resultado); // Verifica que el resultado esperado (5) coincida con el obtenido.
+        assertEquals(10, calculadora.sumar(5, 5));
+        assertEquals(-2, calculadora.sumar(-1, -1));
+        assertEquals(0, calculadora.sumar(0, 0));
     }
 
     /**
-     * Prueba unitaria para verificar la suma de dos números negativos.
-     * Se espera que -2 + (-3) sea igual a -5.
+     * Prueba unitaria del método restar.
      */
     @Test
-    public void testSumarNegativos() {
-        Calculadora calculadora = new Calculadora(); // Crea una instancia de la Calculadora.
-        int resultado = calculadora.sumar(-2, -3); // Ejecuta el método sumar con valores negativos.
-        assertEquals(-5, resultado); // Verifica que el resultado sea -5.
+    public void testRestar() {
+        assertEquals(0, calculadora.restar(5, 5));
+        assertEquals(-10, calculadora.restar(-5, 5));
+    }
+    
+        /**
+     * Prueba unitaria del método multiplicar.
+     */
+    @Test
+    public void testMultiplicar() {
+        assertEquals(25, calculadora.multiplicar(5, 5));
+        assertEquals(0, calculadora.multiplicar(5, 0));
     }
 
     /**
-     * Prueba unitaria para verificar la suma de ceros.
-     * Se espera que 0 + 0 sea igual a 0.
+     * Prueba unitaria del método dividir.
      */
     @Test
-    public void testSumarCero() {
-        Calculadora calculadora = new Calculadora(); // Crea una instancia de la Calculadora.
-        int resultado = calculadora.sumar(0, 0); // Ejecuta el método sumar con ceros.
-        assertEquals(0, resultado); // Verifica que el resultado sea 0.
+    public void testDividir() {
+        assertEquals(2.0, calculadora.dividir(10, 5), 0.001);
+        assertEquals(0.5, calculadora.dividir(1, 2), 0.001);
+    }
+
+    /**
+     * Prueba unitaria para verificar que se lanza la excepción al dividir por cero.
+     */
+    @Test(expected = ArithmeticException.class)
+    public void testDividirPorCero() {
+        calculadora.dividir(10, 0);
     }
 }

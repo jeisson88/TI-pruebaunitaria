@@ -4,59 +4,7 @@
   Java 8+ (Compatible con versiones más recientes)
   JUnit 4 (Framework para pruebas unitarias)
   NetBeans IDE 21
-  # Código Fuente
-  # Clase Calculadora
-  package com.mycompany.calcutest;
-
-/**
- * Clase Calculadora que proporciona operaciones matemáticas básicas.
- */
-public class Calculadora {
-    /**
-     * Método para sumar dos números enteros.
-     * @param a Primer número.
-     * @param b Segundo número.
-     * @return La suma de a y b.
-     */
-    public int sumar(int a, int b) {
-        return a + b;
-    }
-}
-
-
-# Clase de Pruebas: CalculadoraTest
-package com.mycompany.calcutest;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-/**
- * Clase de pruebas unitarias para la Calculadora usando JUnit 4.
- */
-public class CalculadoraTest {
-
-    @Test
-    public void testSumar() {
-        Calculadora calculadora = new Calculadora();
-        int resultado = calculadora.sumar(2, 3);
-        assertEquals(5, resultado); // 2 + 3 = 5
-    }
-
-    @Test
-    public void testSumarNegativos() {
-        Calculadora calculadora = new Calculadora();
-        int resultado = calculadora.sumar(-2, -3);
-        assertEquals(-5, resultado); // -2 + (-3) = -5
-    }
-
-    @Test
-    public void testSumarCero() {
-        Calculadora calculadora = new Calculadora();
-        int resultado = calculadora.sumar(0, 0);
-        assertEquals(0, resultado); // 0 + 0 = 0
-    }
-}
-
+ 
 
 # Cómo Ejecutar el Proyecto
 # opcion 1 clonar el repositorio
